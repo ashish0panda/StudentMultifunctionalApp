@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:padding="30dp">
+
+    <EditText
+        android:id="@+id/namePdf"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"/>
+
+    <EditText
+        android:id="@+id/regdPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/regd_no"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/deptPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/dept"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/dobPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/date_of_birth"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/addressPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/address_dist"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/phonePdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/phone_number"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/create_id_card"
+        android:layout_marginTop="50dp"
+        android:onClick="createPdf"/>
+
+</LinearLayout>

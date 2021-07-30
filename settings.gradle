@@ -1,0 +1,2 @@
+rootProject.name = "spectrumTask2"
+include ':app'

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.spectrumtask2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:requestLegacyExternalStorage="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SpectrumTask2">
+        <activity android:name=".PocSection"
+            android:label="Cr's Number"/>
+        <activity android:name=".Calculator" />
+        <activity android:name=".ToDoList"
+            android:label="To-do-list"/>
+        <activity android:name=".DocumentStorage"
+            android:label="Document store"/>
+        <activity android:name=".Reminder"
+            android:label="@string/r"/>
+        <activity android:name=".TimeTableViewer"
+            android:label="@string/time"/>
+        <activity android:name=".PdfMaker" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Dashboard" />
+        <activity android:name=".registration" />
+        <activity android:name=".MainActivity" />
+        <receiver android:name=".AlarmReceiver"/>
+    </application>
+
+</manifest>

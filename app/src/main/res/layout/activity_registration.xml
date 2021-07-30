@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".registration">
+
+    <RelativeLayout
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:ignore="UselessParent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            android:backgroundTint="@color/black">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="20sp"
+                android:orientation="vertical"
+                android:background="@color/black">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/register"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:contentDescription="@string/profile_image" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/usernameErrorR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_text">
+
+                    <EditText
+                        android:id="@+id/usernameR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/name"
+                        android:importantForAutofill="yes"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:shadowColor="#00FFFFFF"
+                        android:singleLine="true"
+                        android:textColor="@color/purple_700"
+                        android:autofillHints="name" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/emailErrorR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_text">
+
+                    <EditText
+                        android:id="@+id/emailR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/prompt_email"
+                        android:importantForAutofill="yes"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:shadowColor="#00FFFFFF"
+                        android:singleLine="true"
+                        android:textColor="@color/purple_700"
+                        android:autofillHints="Email" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passErrorR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:passwordToggleEnabled="true"
+                    android:background="@drawable/round_text">
+
+                    <EditText
+                        android:id="@+id/passwordR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_password"
+                        android:inputType="textPassword"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/purple_700"
+                        android:importantForAutofill="no" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/conpassErrorR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:passwordToggleEnabled="true"
+                    android:background="@drawable/round_text">
+
+                    <EditText
+                        android:id="@+id/conpasswordR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/confirm_password"
+                        android:inputType="textPassword"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/purple_700"
+                        android:importantForAutofill="no" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/registerR"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:backgroundTint="#FDAC00"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/register"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/loginR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/already_register_click_here_for_login"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBarR"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-70dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>
